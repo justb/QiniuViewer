@@ -1,0 +1,371 @@
+module.exports = {
+    views: function () {
+        return m(".layui-layout.layui-layout-admin.kit-layout-admin",
+            [
+                m(".layui-header",
+                    [
+                        m(".layui-logo",
+                            "KIT ADMIN"
+                        ),
+                        m(".layui-logo.kit-logo-mobile",
+                            "K"
+                        ),
+                        m("ul.layui-nav.layui-layout-left.kit-nav",
+                            [
+                                m("li.layui-nav-item",
+                                    m("a[href='javascript:;']",
+                                        "控"
+                                    )
+                                ),
+                                m("li.layui-nav-item",
+                                    m("a[href='javascript:;']",
+                                        "商品管理"
+                                    )
+                                ),
+                                m("li.layui-nav-item",
+                                    m("a[href='javascript:;'][id='pay']",
+                                        [
+                                            m("i.fa.fa-gratipay[aria-hidden='true']"),
+                                            " 捐赠我"
+                                        ]
+                                    )
+                                ),
+                                m("li.layui-nav-item",
+                                    [
+                                        m("a[href='javascript:;']",
+                                            "其它系统"
+                                        ),
+                                        m("dl.layui-nav-child",
+                                            [
+                                                m("dd",
+                                                    m("a[href='javascript:;']",
+                                                        "邮件管理"
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[href='javascript:;']",
+                                                        "消息管理"
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[href='javascript:;']",
+                                                        "授权管理"
+                                                    )
+                                                )
+                                            ]
+                                        )
+                                    ]
+                                )
+                            ]
+                        ),
+                        m("ul.layui-nav.layui-layout-right.kit-nav",
+                            [
+                                m("li.layui-nav-item",
+                                    [
+                                        m("a[href='javascript:;']",
+                                            [
+                                                m("i.layui-icon",
+                                                    m.trust("&#xe63f;")
+                                                ),
+                                                " 皮肤"
+                                            ]
+                                        ),
+                                        m("dl.layui-nav-child.skin",
+                                            [
+                                                m("dd",
+                                                    m("a[data-skin='default'][href='javascript:;']", { style: { "color": "#393D49" } },
+                                                        [
+                                                            m("i.layui-icon",
+                                                                m.trust("&#xe658;")
+                                                            ),
+                                                            " 默认"
+                                                        ]
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[data-skin='orange'][href='javascript:;']", { style: { "color": "#ff6700" } },
+                                                        [
+                                                            m("i.layui-icon",
+                                                                m.trust("&#xe658;")
+                                                            ),
+                                                            " 橘子橙"
+                                                        ]
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[data-skin='green'][href='javascript:;']", { style: { "color": "#00a65a" } },
+                                                        [
+                                                            m("i.layui-icon",
+                                                                m.trust("&#xe658;")
+                                                            ),
+                                                            " 原谅绿"
+                                                        ]
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[data-skin='pink'][href='javascript:;']", { style: { "color": "#FA6086" } },
+                                                        [
+                                                            m("i.layui-icon",
+                                                                m.trust("&#xe658;")
+                                                            ),
+                                                            " 少女粉"
+                                                        ]
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[data-skin='blue.1'][href='javascript:;']", { style: { "color": "#00c0ef" } },
+                                                        [
+                                                            m("i.layui-icon",
+                                                                m.trust("&#xe658;")
+                                                            ),
+                                                            " 天空蓝"
+                                                        ]
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[data-skin='red'][href='javascript:;']", { style: { "color": "#dd4b39" } },
+                                                        [
+                                                            m("i.layui-icon",
+                                                                m.trust("&#xe658;")
+                                                            ),
+                                                            " 枫叶红"
+                                                        ]
+                                                    )
+                                                )
+                                            ]
+                                        )
+                                    ]
+                                ),
+                                m("li.layui-nav-item",
+                                    [
+                                        m("a[href='javascript:;']",
+                                            [
+                                                m("img.layui-nav-img[src='http://m.zhengjinfan.cn/images/0.jpg']"),
+                                                " Van\
+                        "
+                                            ]
+                                        ),
+                                        m("dl.layui-nav-child",
+                                            [
+                                                m("dd",
+                                                    m("a[data-options='{url:\'basic.html\',icon:\'&#xe658;\',title:\'基本资料\',id:\'966\'}'][href='javascript:;'][kit-target='']",
+                                                        m("span",
+                                                            "基本资料"
+                                                        )
+                                                    )
+                                                ),
+                                                m("dd",
+                                                    m("a[href='javascript:;']",
+                                                        "安全设置"
+                                                    )
+                                                )
+                                            ]
+                                        )
+                                    ]
+                                ),
+                                m("li.layui-nav-item",
+                                    m("a[href='javascript:;']",
+                                        [
+                                            m("i.fa.fa-sign-out[aria-hidden='true']"),
+                                            " 注销"
+                                        ]
+                                    )
+                                )
+                            ]
+                        )
+                    ]
+                ),
+                m(".layui-side.layui-bg-black.kit-side",
+                    m(".layui-side-scroll",
+                        [
+                            m(".kit-side-fold",
+                                m("i.fa.fa-navicon[aria-hidden='true']")
+                            ),
+                            m("ul.layui-nav.layui-nav-tree[kit-navbar=''][lay-filter='kitNavbar']",
+                                [
+                                    m("li.layui-nav-item",
+                                        [
+                                            m("a[class=''][href='javascript:;']",
+                                                [
+                                                    m("i.fa.fa-plug[aria-hidden='true']"),
+                                                    m("span",
+                                                        " 基本元素"
+                                                    )
+                                                ]
+                                            ),
+                                            m("dl.layui-nav-child",
+                                                [
+                                                    m("dd",
+                                                        m("a[data-options='{url:\'table.html\',icon:\'&#xe6c6;\',title:\'表格\',id:\'1\'}'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe6c6;")
+                                                                ),
+                                                                m("span",
+                                                                    " 表格"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-icon='fa-user'][data-id='2'][data-title='表单'][data-url='form.html'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.fa.fa-user[aria-hidden='true']"),
+                                                                m("span",
+                                                                    " 表单"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-icon='&#xe628;'][data-id='3'][data-title='导航栏'][data-url='nav.html'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe628;")
+                                                                ),
+                                                                m("span",
+                                                                    " 导航栏"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-icon='&#xe614;'][data-id='4'][data-title='列表四'][data-url='list4.html'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe614;")
+                                                                ),
+                                                                m("span",
+                                                                    " 列表四"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-options='{url:\'https://www.baidu.com\',icon:\'&#xe658;\',title:\'百度一下\',id:\'5\'}'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe658;")
+                                                                ),
+                                                                m("span",
+                                                                    " 百度一下"
+                                                                )
+                                                            ]
+                                                        )
+                                                    )
+                                                ]
+                                            )
+                                        ]
+                                    ),
+                                    m("li.layui-nav-item.layui-nav-itemed",
+                                        [
+                                            m("a[href='javascript:;']",
+                                                [
+                                                    m("i.fa.fa-plug[aria-hidden='true']"),
+                                                    m("span",
+                                                        " 组件"
+                                                    )
+                                                ]
+                                            ),
+                                            m("dl.layui-nav-child",
+                                                [
+                                                    m("dd",
+                                                        m("a[data-options='{url:\'navbar.html\',icon:\'&#xe658;\',title:\'Navbar\',id:\'6\'}'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe658;")
+                                                                ),
+                                                                m("span",
+                                                                    " Navbar"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-options='{url:\'tab.html\',icon:\'&#xe658;\',title:\'TAB\',id:\'7\'}'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe658;")
+                                                                ),
+                                                                m("span",
+                                                                    " Tab"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-options='{url:\'onelevel.html\',icon:\'&#xe658;\',title:\'OneLevel\',id:\'50\'}'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe658;")
+                                                                ),
+                                                                m("span",
+                                                                    " OneLevel"
+                                                                )
+                                                            ]
+                                                        )
+                                                    ),
+                                                    m("dd",
+                                                        m("a[data-options='{url:\'app.html\',icon:\'&#xe658;\',title:\'App\',id:\'8\'}'][href='javascript:;'][kit-target='']",
+                                                            [
+                                                                m("i.layui-icon",
+                                                                    m.trust("&#xe658;")
+                                                                ),
+                                                                m("span",
+                                                                    " app.js主入口"
+                                                                )
+                                                            ]
+                                                        )
+                                                    )
+                                                ]
+                                            )
+                                        ]
+                                    ),
+                                    m("li.layui-nav-item",
+                                        m("a[data-name='table'][data-url='/components/table/table.html'][href='javascript:;'][kit-loader='']",
+                                            [
+                                                m("i.fa.fa-plug[aria-hidden='true']"),
+                                                m("span",
+                                                    " 表格(page)"
+                                                )
+                                            ]
+                                        )
+                                    ),
+                                    m("li.layui-nav-item",
+                                        m("a[data-name='form'][data-url='/views/form.html'][href='javascript:;'][kit-loader='']",
+                                            [
+                                                m("i.fa.fa-plug[aria-hidden='true']"),
+                                                m("span",
+                                                    " 表单(page)"
+                                                )
+                                            ]
+                                        )
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+                ),
+                m(".layui-body[id='container']",
+                    m("div", { style: { "padding": "15px" } },
+                        [
+                            m("i.layui-icon.layui-anim.layui-anim-rotate.layui-anim-loop",
+                                m.trust("&#xe63e;")
+                            ),
+                            " 请稍等..."
+                        ]
+                    )
+                ),
+                m(".layui-footer",
+                    [
+                        m("a[href='http://kit.zhengjinfan.cn/']",
+                            "kit.zhengjinfan.cn/"
+                        ),
+                        " MIT license\
+            "
+                    ]
+                )
+            ]
+        )
+    }
+}
