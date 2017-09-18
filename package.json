@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "watch": "webpack -d --watch",
-    "build": "webpack -p",
-    "dev": "webpack-dev-server --hot --open --colors --history-api-fallback"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "node ./bin/www dev"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -24,11 +24,15 @@
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
     "extract-text-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
+    "opn": "^5.1.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.8.2",
-    "webpack-hot-middleware": "^2.19.1"
+    "webpack-hot-middleware": "^2.19.1",
+    "webpack-merge": "^4.1.0"
   }
 }

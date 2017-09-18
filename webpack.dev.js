@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
-var opn = require('opn')
+
 
 module.exports = merge(common, {
     devtool: 'inline-source-map',
