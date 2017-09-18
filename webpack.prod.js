@@ -6,10 +6,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = merge(common, {
     devtool: 'source-map',
-    // entry: {
-    //     bundle: "./src/views/index.js",
-    //     vendor: ['mithril']
-    // },
+    entry: {
+        bundle: "./src/views/index.js",
+        vendor: ['mithril']
+    },
     plugins: [
         
         new CleanWebpackPlugin(['public']),
