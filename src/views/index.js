@@ -10,7 +10,15 @@ m.route(document.body, "/", {
 
         },
         render: function () {
-            return m(layout,m(a))
+            return m(layout, m(a))
+        }
+    },
+    "/b": {
+        onmatch: function () {
+
+        },
+        render: function () {
+            return m(layout, "this is b")
         }
     },
     // "/alert": {

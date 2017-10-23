@@ -1,7 +1,14 @@
 import m from 'mithril'
 var Component = {
+    oninit: function(){
+        console.log(123)
+    },
     view: function () {
-        return m("","ha123123123hh")
+        return m("",{
+            onclick: function(){
+                m.route.set("/",null, { replace: true })
+            }
+        },"ha123123123hh")
     }
 }
 
